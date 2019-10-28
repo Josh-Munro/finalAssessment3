@@ -74,3 +74,14 @@ li a {
   padding-left: 10px;
   font-size: 60px;
 }
+
+.sub-titles {
+  margin-top: 40px;
+}
+
+.sub-titles h1 a span {
+  color: #44D359;
+  padding-right: 10px;
+  font-size: 40px;
+  margin-left: -10px;
+}
