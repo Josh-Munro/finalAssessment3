@@ -93,3 +93,9 @@ li a {
   color: black;
   padding:10px;
 }
+
+.title span {
+  color: #44D359;
+  padding-right: 10px;
+  font-size: 40px;
+}
