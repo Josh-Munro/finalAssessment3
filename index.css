@@ -99,3 +99,21 @@ li a {
   padding-right: 10px;
   font-size: 40px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 10px;
+  grid-column-gap: 50px;
+
+}
+
+.about-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px;
+}
