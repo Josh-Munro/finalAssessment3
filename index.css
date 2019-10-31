@@ -132,3 +132,26 @@ li a {
 .about-grid-item img {
   width: 80%;
 }
+
+
+.about-button {
+  padding: 20px;
+  font-size: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgb(0,0,0,0.8);
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+  border-style: none;
+}
+
+.about-button:hover {
+  background-color: #44D000;
+  cursor: pointer;
+
+}
+
+.about-button:active {
+  background-color: #76B346;
+  border-style: none;
+}
