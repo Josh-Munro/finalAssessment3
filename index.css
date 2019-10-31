@@ -155,3 +155,11 @@ li a {
   background-color: #76B346;
   border-style: none;
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 10px;
+  grid-column-gap: 50px;
+
+}
