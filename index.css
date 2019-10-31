@@ -231,3 +231,24 @@ li a {
   .about-grid img {
     width: 100%;
   }
+
+  .gallery-grid img {
+    margin-top: 20px;
+  }
+
+  .title {
+    margin-left: 0px;
+  }
+
+  .sub-heading h1 span {
+    font-size: 20px;
+    padding-right: 0px;
+  }
+
+  .blog-content p{
+    font-size: 17px;
+  }
+
+  #main-image {
+    content: url("kea.jpg")
+  }
