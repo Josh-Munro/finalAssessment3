@@ -212,3 +212,22 @@ li a {
     font-size: 20px;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: auto;
+  }
+
+  .about-grid {
+    grid-template-columns: auto;
+  }
+
+  .about-grid img {
+    width: 100%;
+  }
