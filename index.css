@@ -168,6 +168,27 @@ li a {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.card img {
+  width: 100%;
+}
+
+.card h1 {
+  padding-left: 20px;
+  font-family: "Roboto";
+}
+
+.card h1 span {
+  color: #44D359;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 40px;
+}
+
+.card h3 {
+  padding-left: 50px;
+  font-family: "Roboto";
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: auto auto;
