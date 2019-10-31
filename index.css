@@ -117,3 +117,18 @@ li a {
   transition: 0.3s;
   padding: 20px;
 }
+
+.about-grid-item h1 {
+  font-size: 40px;
+  font-family: "Roboto";
+
+}
+
+.about-grid-item p {
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+.about-grid-item img {
+  width: 80%;
+}
