@@ -197,6 +197,22 @@ li a {
 
 }
 
+.footer {
+  margin-top: 20px;
+  background-color: #252525;
+  margin-bottom: 0px;
+  height: 200px;
+  color: #C8C8C8;
+}
+
+.footer h4 {
+  margin-left: 200px;
+  font-family: "Roboto";
+  padding-top: 10px;
+  float: left;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 1000px) {
   .grid-container {
     grid-template-columns: auto auto;
