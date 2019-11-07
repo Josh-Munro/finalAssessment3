@@ -67,6 +67,25 @@
 
 }
 
+.contact-form {
+  width: 100%;
+  display: block;
+  background-color: pink;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 50px;
+  font-size: 25px;
+  font-family: "Roboto";
+}
+
+
+.contact-form input {
+  background-color: blue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 span {
   color: #44D359;
   padding-right: 10px;
