@@ -1,7 +1,7 @@
 
 
 #about-title {
-  position: fixed;
+  position: relative;
   text-align: center;
   font-family: "Roboto";
   font-size: 30px;
@@ -20,4 +20,15 @@
   opacity: 1;
   transition: 0.3s;
   display: inline-block;
+}
+
+.about-landing-image img {
+  width: 30%;
+  margin-left: 35%;
+  border-radius: 50%;
+}
+
+.about-landing-image {
+  width: 100%;
+
 }
