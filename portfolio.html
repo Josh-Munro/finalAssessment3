@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul>
+        <li>Home</li>
+        <li><a href="blog.html">Portfolio</a></li>
+        <li>About</li>
+        <li>Blog</li>
+      </ul>
+
+      <div class="title">
+        <h1><span>|</span>Rob Davis <br> Photography</h1>
+      </div>
+
+      <div class="sub-heading">
+        <h1> <span>|</span> Rob Davis Portfolio</h1>
+      </div>
+
+
+      <img src="https://www.tatacliq.com/que/wp-content/uploads/2017/08/Sudhir-Shivaram.jpg" alt="" class="landing-image" id=main-image>
+
+  <div class="sub-titles">
+    <h1> <a href="#"><span>|</span>Award winning photos</a></h1>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="https://images.theconversation.com/files/243439/original/file-20181101-83635-1xcrr39.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
+    alt="" class="card" onclick="OpenModal(); currentSlide(1)">
+    <img src="https://images.theconversation.com/files/260231/original/file-20190221-195864-2t43e7.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip"
+    alt="" class="card" onclick="OpenModal(); currentSlide(2)">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Equus_quagga.jpg/1200px-Equus_quagga.jpg"
+    alt="" class="card" onclick="OpenModal(); currentSlide(3)">
+    <img src="https://www.awf.org/sites/default/files/public%3A//media/gallery_0/wildlife/Giraffe/GiraffeConservationKenyaAWF.jpg"
+    alt="" class="card" onclick="OpenModal(); currentSlide(4)">
+  </div>
+
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://images.theconversation.com/files/243439/original/file-20181101-83635-1xcrr39.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://images.theconversation.com/files/260231/original/file-20190221-195864-2t43e7.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Equus_quagga.jpg/1200px-Equus_quagga.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Equus_quagga.jpg/1200px-Equus_quagga.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   <div class="caption-container">
+     <p id="caption"></p>
+   </div>
+
+
+   <div class="column">
+     <img class="demo cursor" src="https://images.theconversation.com/files/243439/original/file-20181101-83635-1xcrr39.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="https://images.theconversation.com/files/243439/original/file-20181101-83635-1xcrr39.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="https://images.theconversation.com/files/243439/original/file-20181101-83635-1xcrr39.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="https://images.theconversation.com/files/243439/original/file-20181101-83635-1xcrr39.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+   </div>
+ </div>
+</div>
+    </div>
+
+    <script>
+function OpenModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  </body>
+</html>
