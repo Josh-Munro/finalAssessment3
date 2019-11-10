@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151768786-1"></script>
     <script>
@@ -24,6 +25,10 @@
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a></li>
+
       </ul>
 
       <div class="title">
@@ -40,9 +45,7 @@
       <div class="about-grid">
         <div class="about-grid-item">
           <img src="images/rob.jpg" alt="">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-   <i class="fa fa-bars"></i>
- </a>
+
         </div>
         <div class="about-grid-item">
           <h1>Robert Davis</h1>
@@ -111,5 +114,16 @@
 
 
     </div>
+
+    <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
   </body>
 </html>

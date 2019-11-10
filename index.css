@@ -29,6 +29,10 @@ body {
   object-fit: cover;
 }
 
+.icon {
+  display: none;
+}
+
 ul {
   background-color: black;
 }
@@ -213,7 +217,9 @@ li a {
 
 @media only screen and (max-width: 1000px) {
 
-  
+  .icon {
+    display: block;
+  }
 
   .grid-container {
     grid-template-columns: auto auto;
