@@ -20,16 +20,18 @@
 </head>
   <body>
     <div class="wrapper">
-      <ul>
+      <ul id="mytop">
         <li>Home</li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a></li>
+
 
       </ul>
+
+      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a></li>
 
       <div class="title">
         <h1><span>|</span>Rob Davis Photography</h1>
@@ -116,8 +118,9 @@
     </div>
 
     <script>
+
 function myFunction() {
-  var x = document.getElementById("myLinks");
+  var x = document.getElementById("mytop");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
