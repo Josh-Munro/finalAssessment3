@@ -77,26 +77,35 @@
 .contact-form {
   width: 100%;
   display: block;
-  background-color: pink;
+  background-color: white;
   text-align: center;
   padding-top: 50px;
   margin-top: 50px;
   font-size: 25px;
   font-family: "Roboto";
+
+
 }
 
-
+/* ------- CONTACT INPUT --------- */
 .contact-form input {
+  text-align: center;
+  font-size: 20px;
   background-color: white;
   width: 300px;
   height: 60px;
-  border-radius: 20px;
+  border-color: grey;
+  border-radius: 5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .contact-form input placeholder {
-  font-size: 20px;
+  font-size: 40px;
+  text-align: center;
+
 }
 
 span {
@@ -112,6 +121,7 @@ span {
 
 .social-item {
   display: grid;
+  margin-top: 50px;
 }
 
 .social-item img {
@@ -121,11 +131,25 @@ span {
 }
 
 
-@media only screen and (max-width: 1000px) {
+
+/* MOBILE */
+@media only screen and (max-width: 1200px) {
   .about-passions {
     grid-template-columns: auto;
     grid-row-gap: 50px;
 
   }
+
+  .social {
+    grid-template-columns: auto;
+    margin-top: 40px;
+  }
+
+  .social-item {
+    padding-top: 20px;
+  }
+
+
+}
 
 }
