@@ -1,5 +1,5 @@
 
-
+/* About title */
 .about-title {
   position: relative;
   text-align: center;
@@ -13,6 +13,7 @@
 
 }
 
+/* may not need this */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -21,6 +22,7 @@
 
 }
 
+/* CSS GRIDS ABOUT PASSIONS SECTION */
 .about-passions {
   margin-top: 70px;
   display: grid;
@@ -31,22 +33,26 @@
   padding: 20px;
 }
 
+/* ABOUT PASSIONS HEADING */
 .about-passions-item h1 {
   font-size: 40px;
   font-family: "Roboto";
 
 }
 
+/* ABOUT PASSIONS PARAGRAPH */
 .about-passions-item p {
   font-size: 20px;
   font-family: "Roboto";
 }
 
+/* ABOUT PASSIONS IMAGE */
 .about-passions-item img {
   width: 80%;
   padding: 20px;
 }
 
+/* ROB DAVIS MAIN IMAGE */
 #main-image {
   margin-left: 5%;
   width: 90%;
@@ -55,6 +61,7 @@
   transition: 0.3s;
   display: inline-block;
 }
+
 
 .about-landing-image img {
   width: 30%;

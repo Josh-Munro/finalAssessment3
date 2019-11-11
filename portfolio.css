@@ -1,6 +1,9 @@
+/* ROW COLUMN PADDING */
+
 .row > .column {
   padding: 0 8px;
 }
+
 
 .row:after {
   content: "";
@@ -8,6 +11,7 @@
   clear: both;
 }
 
+/* COLUMN */
 .column {
   float: left;
   width: 25%;
@@ -55,12 +59,14 @@
   cursor: pointer;
 }
 
+/* The images */
 .mySlides {
   display: none;
   width: 70%;
   margin: auto;
 }
 
+/* Cursor */
 .cursor {
   cursor: pointer;
 }
@@ -104,10 +110,12 @@
   top: 0;
 }
 
+/* The images width */
 img {
   width: 100%;
 }
 
+/* CAPTION */
 .caption-container {
   text-align: center;
   background-color: black;
@@ -115,15 +123,18 @@ img {
   color: white;
 }
 
+/* DEMO */
 .demo {
   opacity: 0.6;
 }
 
+/* WHEN IMAGE ACTIVE */
 .active,
 .demo:hover {
   opacity: 1;
 }
 
+/* Image Shadow */
 img.hover-shadow {
   transition: 0.3s;
 }
