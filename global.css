@@ -1,0 +1,116 @@
+/* This is the styling for the body */
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+/* Stylign for icon hamburger */
+.icon {
+  display: none;
+}
+/* -----------NAVBAR----------- */
+
+/* Styling for the Ul of NAVBAR */
+ul {
+  background-color: black;
+}
+/* Stylign for LI of NAVBAR */
+li {
+  float: right;
+  list-style-type: none;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+/* Stylign for a links in NAVBAR */
+li a {
+  text-decoration-style: none;
+  color: black;
+  text-underline-position: none;
+}
+
+/* This is the wrapper for the whole document */
+.wrapper {
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+/* ---------------- LOGO -------------- */
+
+/* This is the title/logo for all the pages */
+.title {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 60px;
+
+}
+/* This is the styling for the text in the title */
+.title h1 {
+  border-color: green;
+  border-width: 10px;
+}
+
+/* Stylign for span title */
+.title span {
+  color: #44D359;
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+/* ---------------- LANDING PAGE ----------------- */
+
+/* This is the styling for the landing image div */
+.landing-image {
+  padding: 0;
+  width: 100%;
+  z-index: -1;
+  display: inline;
+  object-fit: cover;
+}
+/* Sub heading for the landing page */
+.sub-heading {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 20px;
+  background-color: rgb(0,0,0,0.8);
+  padding-right: 20px;
+  letter-spacing: .20em
+
+}
+/* h1 for the sub-heading */
+.sub-heading h1 {
+  font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+  font-size: 40px;
+  color: white;
+
+}
+/* This is the styling for the sub heading over the landing image  */
+.sub-heading h1 span {
+  color: #44D359;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 60px;
+}
+
+/* This is the styling for the subtitles */
+.sub-titles {
+  margin-top: 40px;
+}
+
+/* Styling for the span in the subtitles */
+.sub-titles h1 a span {
+  color: #44D359;
+  padding-right: 10px;
+  font-size: 40px;
+  margin-left: -10px;
+}
+
+/* Stylign for a links in sub title */
+.sub-titles h1 a {
+  font-size: 40px;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: black;
+  padding:10px;
+}
