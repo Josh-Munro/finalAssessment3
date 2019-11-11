@@ -320,5 +320,8 @@ li a {
     width: 100%;
   }
 
+  .footer {
+    height: 400px;
+  }
 
 }
