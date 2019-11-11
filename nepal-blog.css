@@ -1,0 +1,28 @@
+.blog-title {
+  font-family: "Roboto";
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.main-image img{
+  width: 60%;
+  margin-left: 20%;
+}
+
+.blog-content {
+  width: 60%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content p {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.blog-content img {
+  width: 100%;
+}
