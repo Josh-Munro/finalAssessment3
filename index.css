@@ -30,6 +30,12 @@ li a {
   text-underline-position: none;
 }
 
+/* Span li for active link */
+
+li span {
+  color: green;
+}
+
 /* This is the wrapper for the whole document */
 .wrapper {
   width: 95%;
