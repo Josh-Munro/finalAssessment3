@@ -114,3 +114,22 @@ li a {
   color: black;
   padding:10px;
 }
+
+/* ----------- FOOTER ------------ */
+
+/* Styling for the footer */
+.footer {
+  margin-top: 20px;
+  background-color: #252525;
+  margin-bottom: 0px;
+  height: 200px;
+  color: #C8C8C8;
+}
+/* Stylign for the h4 heading in footer */
+.footer h4 {
+  margin-left: 200px;
+  font-family: "Roboto";
+  padding-top: 10px;
+  float: left;
+  overflow: hidden;
+}
