@@ -139,3 +139,60 @@ li span {
   float: left;
   overflow: hidden;
 }
+
+
+/* --------------- MOBILE MODE -------------- */
+@media only screen and (max-width: 600px) {
+
+/* NAVBAR AND LANDING PAGE */
+  #main-image {
+    content: url("")
+  }
+
+  li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+/* RESPONSIVE TITLE */
+  .title {
+    margin-left: 0px;
+  }
+/* RESPONIVE SUB_HEADING */
+  .sub-heading h1 span {
+    font-size: 20px;
+    padding-right: 0px;
+  }
+
+/* RESPONSIVE BLOG CARDS */
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .blog-content p{
+    font-size: 17px;
+  }
+
+/* RESPONSIVE GALLERY */
+  .gallery-grid {
+    grid-template-columns: auto;
+  }
+
+  .gallery-grid img {
+    margin-top: 20px;
+  }
+
+/* ----ABOUT----- */
+  .about-grid {
+    grid-template-columns: auto;
+  }
+
+  .about-grid img {
+    width: 100%;
+  }
+
+  .footer {
+    height: 400px;
+  }
+
+}

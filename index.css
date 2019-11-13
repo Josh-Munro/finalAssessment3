@@ -33,7 +33,7 @@ li a {
 /* Span li for active link */
 
 li span {
-  color: green;
+  color: #44D359;
 }
 
 /* This is the wrapper for the whole document */
@@ -119,6 +119,25 @@ li span {
   text-decoration: none;
   color: black;
   padding:10px;
+}
+
+/* ----------- FOOTER ------------ */
+
+/* Styling for the footer */
+.footer {
+  margin-top: 20px;
+  background-color: #252525;
+  margin-bottom: 0px;
+  height: 200px;
+  color: #C8C8C8;
+}
+/* Stylign for the h4 heading in footer */
+.footer h4 {
+  margin-left: 200px;
+  font-family: "Roboto";
+  padding-top: 10px;
+  float: left;
+  overflow: hidden;
 }
 
 /* ----------------- ABOUT SECTION ------------ */
@@ -231,24 +250,6 @@ li span {
   grid-column-gap: 50px;
 
 }
-/* ----------- FOOTER ------------ */
-
-/* Styling for the footer */
-.footer {
-  margin-top: 20px;
-  background-color: #252525;
-  margin-bottom: 0px;
-  height: 200px;
-  color: #C8C8C8;
-}
-/* Stylign for the h4 heading in footer */
-.footer h4 {
-  margin-left: 200px;
-  font-family: "Roboto";
-  padding-top: 10px;
-  float: left;
-  overflow: hidden;
-}
 
 /* --------- TABLET MODE -------- */
 @media only screen and (max-width: 1000px) {
@@ -297,6 +298,10 @@ li span {
   .sub-heading h1 span {
     font-size: 20px;
     padding-right: 0px;
+  }
+
+  .sub-heading h1 {
+    font-size: 24px;
   }
 
 /* RESPONSIVE BLOG CARDS */
