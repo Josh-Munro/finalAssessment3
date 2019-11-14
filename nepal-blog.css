@@ -1,3 +1,5 @@
+/* Styling for blog title */
+
 .blog-title {
   font-family: "Roboto";
   margin-top: 20px;
@@ -5,11 +7,13 @@
   text-align: center;
 }
 
+/* Styling for main image */
 .main-image img{
   width: 60%;
   margin-left: 20%;
 }
 
+/* Styling for blog content */
 .blog-content {
   width: 60%;
   text-align: left;
@@ -17,12 +21,14 @@
   margin-right: auto;
 }
 
+/* Styling for blog content paragrpah */
 .blog-content p {
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
 
 }
 
+/* Stylign for blog content images */
 .blog-content img {
   width: 100%;
 }

@@ -254,13 +254,6 @@ li span {
 /* --------- TABLET MODE -------- */
 @media only screen and (max-width: 1000px) {
 
-  #mytop {
-    display: none;
-  }
-
-  .icon {
-    display: block;
-  }
 /* -------CONTAINER GRID -------- */
   .grid-container {
     grid-template-columns: auto auto;
