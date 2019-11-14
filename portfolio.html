@@ -1,168 +1,184 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
 
-    <link rel="stylesheet" href="portfolio.css">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="index.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="wrapper">
-      <ul>
-        <li> <a href="index.html">Home</a></li>
-        <li><span>|Portfolio</span></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="Blog.html">Blog</a></li>
-      </ul>
+  <link rel="stylesheet" href="portfolio.css">
 
-      <div class="title">
-        <h1><span>|</span>Rob Davis Photography</h1>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- WRAPPER -->
+  <div class="wrapper">
+
+    <!-- NAVBAR -->
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><span>|Portfolio</span></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+    </ul>
+
+    <!-- TITLE/LOGO -->
+    <div class="title">
+      <h1><span>|</span>Rob Davis Photography</h1>
+    </div>
+
+    <!-- SUB_HEADING -->
+    <div class="sub-heading">
+      <h1> <span>|</span> Rob Davis Portfolio</h1>
+    </div>
+
+    <!-- LANDING IMAGE -->
+    <img src="https://www.tatacliq.com/que/wp-content/uploads/2017/08/Sudhir-Shivaram.jpg" alt="" class="landing-image" id=main-image>
+
+    <!-- AWARD WINNING PHOTOS SUB-TITLE -->
+    <div class="sub-titles">
+      <h1> <a href="#"><span>|</span>Award winning photos</a></h1>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery-grid">
+      <img src="images/portfolio/portfolio-lion.jpg" alt="" class="card" onclick="OpenModal(); currentSlide(1)">
+
+      <img src="images/portfolio/portfolio-hyena.jpg" alt="https://images.theconversation.com/files/260231/original/file-20190221-195864-2t43e7.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip" class="card" onclick="OpenModal(); currentSlide(2)">
+
+      <img src="images/portfolio/portfolio-zebra.jpg" alt="" class="card" onclick="OpenModal(); currentSlide(3)">
+
+      <img src="images/portfolio/portfolio-girraffe.jpg" alt="https://www.awf.org/sites/default/files/public%3A//media/gallery_0/wildlife/Giraffe/GiraffeConservationKenyaAWF.jpg" class="card" onclick="OpenModal(); currentSlide(4)">
+
+      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/05/01/15/hippo-dung-life.jpg" alt="" class="card" onclick="OpenModal(); currentSlide(5)">
+
+      <img src="https://theculturetrip.com/wp-content/uploads/2017/08/8171039299_ce1c183c36_k1.jpg" alt="" class="card" onclick="OpenModal(); currentSlide(6)">
+    </div>
+
+    <!-- CLOSE BUTTON FOR LIGHTBOX -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <!-- SLIDES -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/portfolio/portfolio-lion.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/portfolio/portfolio-hyena.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/portfolio/portfolio-zebra.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/portfolio/portfolio-girraffe.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/portfolio/portfolio-girraffe.jpg">
+        </div>
+
+        <!-- NEXT AND PREVIOUS BUTTONS -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- CAPTIONS -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- DEMO COLUMNS -->
+        <div class="column">
+          <img class="demo cursor" src="images/portfolio/portfolio-lion.jpg" style="width:100%" onclick="currentSlide(1)" alt="Lion">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/portfolio/portfolio-hyena.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hyena">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/portfolio/portfolio-zebra.jpg" style="width:100%" onclick="currentSlide(3)" alt="Zebra">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/portfolio/portfolio-girraffe.jpg" style="width:100%" onclick="currentSlide(4)" alt="Girraffe">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/portfolio/portfolio-girraffe.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+        </div>
       </div>
-
-      <div class="sub-heading">
-        <h1> <span>|</span> Rob Davis Portfolio</h1>
-      </div>
+    </div>
 
 
-      <img src="https://www.tatacliq.com/que/wp-content/uploads/2017/08/Sudhir-Shivaram.jpg" alt="" class="landing-image" id=main-image>
-
-  <div class="sub-titles">
-    <h1> <a href="#"><span>|</span>Award winning photos</a></h1>
   </div>
 
-  <div class="gallery-grid">
-    <img src="images/portfolio/portfolio-lion.jpg"
-    alt="" class="card" onclick="OpenModal(); currentSlide(1)">
+  <!-- FOOTER -->
+  <div class="footer">
 
-    <img src="images/portfolio/portfolio-hyena.jpg"
-    alt="https://images.theconversation.com/files/260231/original/file-20190221-195864-2t43e7.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip"
-    class="card" onclick="OpenModal(); currentSlide(2)">
+    <h4>Donate</h4>
 
-    <img src="images/portfolio/portfolio-zebra.jpg"
-    alt="" class="card" onclick="OpenModal(); currentSlide(3)">
+    <h4>Support</h4>
 
-    <img src="images/portfolio/portfolio-girraffe.jpg"
-    alt="https://www.awf.org/sites/default/files/public%3A//media/gallery_0/wildlife/Giraffe/GiraffeConservationKenyaAWF.jpg" class="card" onclick="OpenModal(); currentSlide(4)">
+    <h4>Links/references</h4>
 
-  <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/05/01/15/hippo-dung-life.jpg"
-  alt="" class="card" onclick="OpenModal(); currentSlide(5)">
+    <h4>Visit creator of website</h4>
 
-  <img src="https://theculturetrip.com/wp-content/uploads/2017/08/8171039299_ce1c183c36_k1.jpg"
-  alt="" class="card" onclick="OpenModal(); currentSlide(6)">
-</div>
+    <h4>Created By JDM &copy;</h4>
 
-  <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 5</div>
-      <img src="images/portfolio/portfolio-lion.jpg">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 5</div>
-      <img src="images/portfolio/portfolio-hyena.jpg">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 5</div>
-      <img src="images/portfolio/portfolio-zebra.jpg">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 5</div>
-      <img src="images/portfolio/portfolio-girraffe.jpg">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">5 / 5</div>
-      <img src="images/portfolio/portfolio-girraffe.jpg">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-   <div class="caption-container">
-     <p id="caption"></p>
-   </div>
-
-
-   <div class="column">
-     <img class="demo cursor" src="images/portfolio/portfolio-lion.jpg" style="width:100%" onclick="currentSlide(1)" alt="Lion">
-   </div>
-   <div class="column">
-     <img class="demo cursor" src="images/portfolio/portfolio-hyena.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hyena">
-   </div>
-   <div class="column">
-     <img class="demo cursor" src="images/portfolio/portfolio-zebra.jpg" style="width:100%" onclick="currentSlide(3)" alt="Zebra">
-   </div>
-   <div class="column">
-     <img class="demo cursor" src="images/portfolio/portfolio-girraffe.jpg" style="width:100%" onclick="currentSlide(4)" alt="Girraffe">
-   </div>
-   <div class="column">
-     <img class="demo cursor" src="images/portfolio/portfolio-girraffe.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
-   </div>
- </div>
-</div>
-
-
-    </div>
-
-    <!-- FOOTER -->
-      <div class="footer">
-
-        <h4>Donate</h4>
-
-        <h4>Support</h4>
-
-        <h4>Links/references</h4>
-
-        <h4>Visit creator of website</h4>
-
-        <h4>Created By JDM &copy;</h4>
-
+    <!-- JAVASCRIPT LIGHBOX -->
     <script>
-function OpenModal() {
-  document.getElementById("myModal").style.display = "block";
-}
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+      // Show lightbox
+      function OpenModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      // Close lighbox
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-  </body>
+      // NAVIGATING THROUGH SLIDES
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+</body>
+
 </html>
